@@ -160,9 +160,8 @@ resource VMSS 'Microsoft.Compute/virtualMachineScaleSets@2021-07-01' = {
     capacity: AppServer.AutoScalecapacity.minimum
   }
   zones: contains(AppServer, 'zones') ? AppServer.zones : [
-    '2'
-    '3'
     '1'
+    '3'
   ]
   properties: {
     zoneBalance: true
