@@ -24,7 +24,7 @@ env:
   BuildName:   0.1.${{ github.run_number }}
   Environment: D1
   OrgName:     ECHO
-  Location:    canadacentral
+  Location:    eastus
 
 jobs:
   build:
