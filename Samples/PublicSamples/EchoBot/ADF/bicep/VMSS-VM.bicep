@@ -161,6 +161,7 @@ resource VMSS 'Microsoft.Compute/virtualMachineScaleSets@2021-07-01' = {
   }
   zones: contains(AppServer, 'zones') ? AppServer.zones : [
     '1'
+    '2'
     '3'
   ]
   properties: {
